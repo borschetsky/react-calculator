@@ -1,0 +1,26 @@
+.calc {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: 
+        "d "
+        "k ";
+}
+
+.display {
+    grid-area: d;
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: black;
+}
+
+.keys {
+    grid-area: k;
+    
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: lightgrey;
+}
