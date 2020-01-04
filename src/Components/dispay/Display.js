@@ -18,8 +18,13 @@ export default class Display extends Component {
             }
             
             const { current } = this.props;
-            const { expresion } = this.state;
+            let { expresion } = this.state;
             if (current === 'eq') {
+                const lastChar = expresion.toString().substring(expresion.length - 1);
+                if (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/') {
+                    expresion = expresion.toString().substring(0, expresion.length - 1);
+                    console.log(expresion);
+                }
                 const result = evaluate(expresion);
                 this.setState({expresion: result});
                 return;
@@ -31,8 +36,7 @@ export default class Display extends Component {
                 else {
                     this.setState({expresion: `${current}`})
                 }
-            }
-            else {
+            } else {
                 if(current === '.') {
                     let indx = 0;
                     for (let i = 0; i < expresion.length - 1; i++) {
@@ -43,16 +47,20 @@ export default class Display extends Component {
                             indx = i;
                         }
                     }
-                    const sbstr = expresion.substring(indx + 1, expresion.length);
+                    const sbstr = expresion.toString().substring(indx + 1, expresion.length);
                     const check =  sbstr.indexOf(current);
                     if(check > -1) {
-                        return
+                        return;
+                    }
+                }
+                if (current === '+' || current === '-' || current === '*' || current === '/') {
+                    const subst = expresion.toString().substring(expresion.length - 1);
+                    if(subst === '+' || subst === '-' || subst === '*' || subst === '/') {
+                        return;
                     }
                 }
                 this.setState({expresion: `${expresion}${current}`})
-
             }
-            
         }
     }
 
