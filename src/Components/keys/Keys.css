@@ -29,30 +29,12 @@
 .equals:active {
     background-color: darkorange;
 }
+
 .zero {
-    display: grid;
     grid-area: z;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
-
 }
-
-.zero:active {
-    background-color: #e5e5e5;
-    border-bottom-left-radius: 25px;
-    background: #e5e5e5;
-  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-          box-shadow: inset 0px 0px 5px #c1c1c1;
-   outline: none;
-   transition: box-shadow 2s;
-}
-
 /*.zero:hover {
     background-color: #bfbfbf;
     border-bottom-left-radius: 25px;
@@ -60,136 +42,67 @@
 }*/
 
 .one {
-    display: grid;
     grid-area: one;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
 }
 
 .two {
-    display: grid;
     grid-area: two;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
 }
 
 .three {
-    display: grid;
     grid-area: three;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
 }
 
 .dot {
-    display: grid;
     grid-area: dot;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
 
 }
 
 .ce {
-    display: grid;
     grid-area: ce;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
 }
 
 .four {
-    display: grid;
     grid-area: four;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
 
 }
 
 .five {
-    display: grid;
     grid-area: five;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
-    
-
 }
 
 .six {
-    display: grid;
     grid-area: six;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
 }
 
 .seven {
-    display: grid;
     grid-area: seven;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
     
 }
 
 .eight {
-    display: grid;
     grid-area: eight;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
     border-right: 1px solid darkgray;
-    
 }
 
 .nine {
-    display: grid;
     grid-area: nine;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     border-top: 1px solid darkgray;
 }
 
@@ -224,5 +137,16 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.common:active {
+    background-color: #e5e5e5;
+    border-bottom-left-radius: 25px;
+    background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 10px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 10px #c1c1c1;
+          box-shadow: inset 0px 0px 10px #c1c1c1;
+   outline: none;
+   transition: box-shadow 2s;
 }
 /*#425e70*/
