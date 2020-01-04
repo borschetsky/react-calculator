@@ -7,10 +7,7 @@ export default class Display extends Component {
         expresion: '0'
     }
 
-      
-
     componentDidUpdate(prevProps, prevState) {
-        console.log('debug from dsplay')
         if (prevProps !== this.props) {
             if(this.props.current === 'ce') {
                 this.setState({expresion: '0'});
@@ -23,7 +20,6 @@ export default class Display extends Component {
                 const lastChar = expresion.toString().substring(expresion.length - 1);
                 if (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/') {
                     expresion = expresion.toString().substring(0, expresion.length - 1);
-                    console.log(expresion);
                 }
                 const result = evaluate(expresion);
                 this.setState({expresion: result});

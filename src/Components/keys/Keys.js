@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './Keys.css';
 
 export default class Keys extends Component {
-    // onOne = (args) => {
-    //     this.props.handleKey(args);
-    // }
     render() {
         return (
             <div className="keys">
@@ -25,9 +22,7 @@ export default class Keys extends Component {
                 <div className="mult common operators" onClick={ () => this.props.handleKey('*')}>x</div>
                 <div className="minus common operators" onClick={ () => this.props.handleKey('-')}>-</div>
                 <div className="dev common operators" onClick={ () => this.props.handleKey('/')}>/</div>
-
             </div>  
-            
             );
     }
 }

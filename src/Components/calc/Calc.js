@@ -10,7 +10,6 @@ export default class Calc extends Component {
     }
 
     handleKey = (args) => {
-        console.log('calc');
         if(args === 'ce') {
             this.setState({current: 'ce'});
             return;
